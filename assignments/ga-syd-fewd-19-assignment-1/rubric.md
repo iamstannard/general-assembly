@@ -4,12 +4,14 @@
 
 ###Description
 
+
 For the first assignment, you will begin creating the beginnings of your first website. Take what you've learned from class and build a portfolio site that showcases all of the projects you'll be completing over the next few weeks. Build two pages - an 'About Page' and a 'Portfolio' - that link to one another. Your 'About Page' should describe your mission and value proposition and your 'Portfolio' should include descriptions of the work you [will] do for Relaxr, Startup Matchmaker, and CitiPix.
 
 
 Student: Aaron Stannard
 
 Project URL: https://github.com/iamstannard/general-assembly/tree/master/assignments/ga-syd-fewd-19-assignment-1
+
 
 
 | Technical Requirements                                                                                                                                                        | Does Not Meet Expectations (0) | Meets Expectations (1) | Exceeds Expectations (2) |

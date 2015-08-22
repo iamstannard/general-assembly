@@ -2,15 +2,16 @@
 
 ---
 
-
 ###Description
 
 
 A hot, new NY Tech Startup, Relaxr, has approached you to help them develop a new landing page for their company. They've handed you the design file for the site, along with the copy and assets. You need to take these files and turn it into a landing page.
 
+
 Student: Aaron Stannard
 
 Project URL: https://github.com/iamstannard/general-assembly/tree/master/assignments/ga-syd-fewd-19-assignment-2
+
 
 
 |                                                                                                                               |                                |                        |                          |
