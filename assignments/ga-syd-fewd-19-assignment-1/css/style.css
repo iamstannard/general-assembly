@@ -1,0 +1,109 @@
+body {
+    background-color: #ffffff;
+    width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 70pt;
+    line-height: 35pt;
+    padding-bottom: 25px;
+    color: aquamarine;
+    text-align: center;
+}
+
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
+    font-family: 'Arimo', sans-serif;
+}
+
+h1,
+h2,
+h4 {
+    text-align: center;
+}
+
+h2,
+h4 {
+    letter-spacing: 2px;
+}
+
+h2,
+h3 {
+    font-weight: 700;
+}
+
+p,
+ul,
+h4 {
+    font-weight: 400;
+}
+
+h2,
+h4 {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 0px 10px 0px;
+}
+
+h2 a,
+h4 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+h2 a:hover,
+h4 a:hover {
+    color: aquamarine;
+}
+
+p,
+ul {
+    font-size: 11pt;
+    line-height: 14pt;
+}
+
+h4 {
+    font-size: 8pt;
+}
+
+#about-me-container {
+    height: 200px;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    background-color: aquamarine;
+}
+
+#about-me {
+    width: 540px;
+    height: 160px;
+    padding-top: 40px;
+}
+
+#profile-pic {
+    float: right;
+}
+
+#active-page {
+    color: aquamarine;
+}
+
+.portfolio-image {
+    width: 400px;
+    padding-bottom: 10px;
+}
+
+.top-nav {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.social-nav {
+    padding-left: 10px;
+    padding-right: 10px;
+}
