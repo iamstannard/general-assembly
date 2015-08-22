@@ -1,0 +1,42 @@
+body {
+    width: 50%;
+    margin: auto;
+}
+
+h1 {
+    background: red;
+    padding: 30px;
+    border: black solid 1px;
+}
+
+p {
+    width: calc(100% - 60px);
+    background: blue;
+    color: white;
+    padding: 10px 30px;
+    border: black solid 1px;
+}
+
+code {
+    background: white;
+    color: black;
+    padding: 2px;
+    border: green solid 1px;
+}
+
+h2 {
+    background: yellow;
+    padding: 10px;
+    border: red solid 10px;
+}
+
+ol {
+    background: green;
+}
+
+li {
+    color:white;
+    margin-top: 3px;
+    background: rgba(255, 0, 0, 0.25);
+    padding: 3px;
+}

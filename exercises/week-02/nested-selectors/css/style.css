@@ -1,0 +1,17 @@
+body {
+    font-family: sans-serif;
+}
+
+em {
+    color: red;
+    font-weight: bold;
+}
+
+blockquote p {
+    font-style: italic;
+}
+
+blockquote p em {
+    font-style: normal;
+    font-weight: normal;
+}

@@ -24,15 +24,20 @@ img {
 }
 
 h1 {
+    font-size: 30pt;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
+h2 {
+    font-size: 20pt;
+}
+
 h2,
 h3,
 h4,
-nav,
+a,
 ul {
     font-family: sans-serif;
 }
@@ -43,19 +48,22 @@ ul p {
 
 nav {
     text-align: center;
-    text-decoration: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 a {
     color: #ffffff;
-    padding-left: 10px;
-    padding-right: 10px;
+    font-size: 18pt;
+    padding-left: 15px;
+    padding-right: 15px;
     text-decoration: none;
 }
 
 a:hover {
+    color: aqua;
+    text-decoration: none;
+}
+
+.social-nav {
     color: aqua;
 }
 
