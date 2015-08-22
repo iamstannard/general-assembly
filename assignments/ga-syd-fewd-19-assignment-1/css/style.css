@@ -13,63 +13,65 @@ h1 {
     text-align: center;
 }
 
-h2,
 h3,
-h4,
 h5,
+nav,
 p,
 ul {
     font-family: 'Arimo', sans-serif;
 }
 
 h1,
-h2,
-h4 {
+nav {
     text-align: center;
 }
 
-h2,
-h4 {
+nav {
     letter-spacing: 2px;
 }
 
-h2,
-h3 {
+h3,
+.top-nav {
     font-weight: 700;
 }
 
 p,
 ul,
-h4 {
+social-nav {
     font-weight: 400;
 }
 
-h2,
-h4 {
+nav {
     background-color: #000000;
     color: #ffffff;
     padding: 10px 0px 10px 0px;
 }
 
-h2 a,
-h4 a {
+.top-nav,
+.social-nav {
     color: #ffffff;
     text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-h2 a:hover,
-h4 a:hover {
+.top-nav:hover,
+.social-nav:hover {
     color: aquamarine;
+}
+
+.top-nav {
+    font-size: 12pt;
+}
+
+.social-nav {
+    font-size: 8pt;
 }
 
 p,
 ul {
     font-size: 11pt;
     line-height: 14pt;
-}
-
-h4 {
-    font-size: 8pt;
 }
 
 #about-me-container {
@@ -81,12 +83,13 @@ h4 {
 
 #about-me {
     width: 540px;
-    height: 160px;
-    padding-top: 40px;
+    height: 180px;
+    padding-top: 60px;
 }
 
 #profile-pic {
     float: right;
+    padding: 20px 0px;
 }
 
 #active-page {
@@ -96,14 +99,4 @@ h4 {
 .portfolio-image {
     width: 400px;
     padding-bottom: 10px;
-}
-
-.top-nav {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.social-nav {
-    padding-left: 10px;
-    padding-right: 10px;
 }
