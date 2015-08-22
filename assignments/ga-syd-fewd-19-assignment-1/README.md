@@ -9,7 +9,7 @@ For the first assignment, you will begin creating the beginnings of your first w
 
 Student: Aaron Stannard
 
-Project URL: https://github.com/iamstannard/ga-syd-fewd-19-assignment-1
+Project URL: https://github.com/iamstannard/general-assembly/tree/master/assignments/ga-syd-fewd-19-assignment-1
 
 
 | Technical Requirements                                                                                                                                                        | Does Not Meet Expectations (0) | Meets Expectations (1) | Exceeds Expectations (2) |
