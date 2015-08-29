@@ -1,0 +1,31 @@
+body * {
+    font-family: Arial, sans-serif;
+    /*
+    margin:0px;
+    padding:0px;
+*/
+}
+
+.notification {
+    color: orange;
+    background-color: bisque;
+    padding: 5px 20px;
+}
+
+.message {
+    color: blue;
+    background-color: deepskyblue;
+    padding: 5px 20px;
+}
+
+.error {
+    color: red;
+    background-color: fuchsia;
+    padding: 5px 20px;
+}
+
+.success {
+    color: green;
+    background-color: aquamarine;
+    padding: 5px 20px;
+}
