@@ -3,14 +3,49 @@ http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 
 html {
     box-sizing: border-box;
-/*
-    padding: 0;
-    margin: 0;
-*/
 }
 
 *,
 *:before,
 *:after {
     box-sizing: inherit;
+}
+
+/* Current Clearfix best practice */
+/* For modern browsers */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+/* For IE 6/7 (triggers hasLayout) */
+
+.cf {
+    *zoom: 1;
+}
+
+
+/* Styling */
+
+body {
+    width: 800px;
+    margin: 0px auto;
+    background: #eee url(http://placehold.it/2000x200) top center no-repeat;
+}
+
+h1,
+h2,
+nav,
+p {
+    margin: 0px;
+}
+
+header {
+    height: 200px;
 }
