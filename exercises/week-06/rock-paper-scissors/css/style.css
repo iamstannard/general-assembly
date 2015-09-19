@@ -1,0 +1,33 @@
+.cf, .cf:before {
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    content: "";
+    display: table;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.game .inputs {
+    margin: 0 auto;
+}
+
+#results {
+    display: none;
+}
+
+a {
+    cursor: pointer;
+    float: left;
+}
+
+.scoreboard {
+    /* Try to take this out of the flow so that it is positioned in the top
+    right of the screen, CSS only no JavaSript*/
+}

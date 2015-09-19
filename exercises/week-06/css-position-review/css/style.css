@@ -1,0 +1,97 @@
+html,
+body {
+    height: 100%;
+    color: #333;
+    font-family: Arial, san-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+header {
+    position: fixed;
+    height: 80px;
+    background: #333;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* We set high z-index value on the header so that it remains on the top of the stack
+    ** Change to zero to see what happens */
+    z-index: 10000;
+}
+
+a {
+    text-decoration: none;
+}
+
+header nav a {
+    width: 100px;
+    line-height: 80px;
+    text-align: center;
+    display: inline-block;
+}
+
+header nav a,
+.article-quicklinks nav a {
+    background: #365D95;
+    color: #fff;   
+}
+
+/* Invert the color and the background on hover */
+header nav a:hover,
+.article-quicklinks nav a:hover {
+    background: #fff;
+    color: #365D95;   
+}
+
+article {
+    margin: 0 auto;
+    padding: 100px;
+    position: relative;
+    min-width: 380px;
+}
+
+article h1 {
+    text-align: center;
+}
+
+article > section {
+    padding: 10px 200px 10px 0;
+}
+
+
+/* Begin of Chapter Marker */
+
+section.boc-marker:first-of-type:before {
+    content: " ";
+    width: 40px;
+    height: 80px;
+    background: #eee;
+    color: red;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    z-index: 1;
+}
+
+.article-quicklinks {
+    position: fixed;
+    top: 210px;
+    right: 40px;
+    height: 300px;
+    background: #eee;
+    z-index: 10000;
+    width: 200px;
+}
+
+.article-quicklinks h3 {
+    text-align: center;
+}
+
+.article-quicklinks nav a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+}
