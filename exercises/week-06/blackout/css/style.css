@@ -1,3 +1,7 @@
-body.dark {
-  background: black;
+.dark {
+  background: #000;
+}
+
+.light {
+  color: #333;
 }

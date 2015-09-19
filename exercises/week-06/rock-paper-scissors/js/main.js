@@ -38,10 +38,9 @@
      ** written much better once we have a handle on what we are doing.
      */
     function determineWinner(humanSelection, computerSelection) {
-        /* Scenarios where human wins */
+
         if (humanSelection === 'Rock' && computerSelection === 'Scissors') {
             humanScore = humanScore + 1;
-
             /* Use jQuery to find the results element and update it's html */
             $('#results h4').html('You Win - Rock Beats Scissors');
 
@@ -54,16 +53,26 @@
             humanScore = humanScore + 1;
             /* Use jQuery to find the results element and update it's html */
             $('#results h4').html('You Win - Scissors Beats Paper');
+        } else if (computerSelection === 'Rock' && humanSelection === 'Scissors') {
+            computerScore = computerScore + 1;
+            /* Use jQuery to find the results element and update it's html */
+            $('#results h4').html('Computer Wins - Rock Beats Scissors');
+
+        } else if (computerSelection === 'Paper' && humanSelection === 'Rock') {
+            computerScore = computerScore + 1;
+            /* Use jQuery to find the results element and update it's html */
+            $('#results h4').html('Computer Wins - Paper Beats Rock');
+
+        } else if (computerSelection === 'Scissors' && humanSelection === 'Paper') {
+            computerScore = computerScore + 1;
+            /* Use jQuery to find the results element and update it's html */
+            $('#results h4').html('Computer Wins - Scissors Beats Paper');
 
         } else {
             /* Draw */
-
             /* Use jQuery to find the results element and update it's html */
-            $('#results h4').html('Draw - Play again - ' + computerSelection + ' cancels ' + humanSelection);
+            $('#results h4').html('Draw - Play Again - ' + humanSelection + ' Cancels ' + computerSelection);
         }
-        
-        /* Mmmm, the code above is buggy.  Currently the human can never loose the worse is only a
-                   draw.  You need to write the code here for the cases that involve the computer winning.*/
 
         console.log('Human score is ', humanScore);
 
@@ -80,7 +89,7 @@
         /* At this point computerPlayersDecision with have the value of either 'Rock', 'Paper' or 'Scissors' */
 
         /* Write out an information message to the console - useful for debugging purposes but should be removed when site goes live*/
-        console.log('Rock Clicked, Computer has chosen ', computerPlayersDecision);
+        console.log('Rock Clicked, Computer has chosen', computerPlayersDecision);
 
         /* Call our determine determineWinner function defined above with the literal value 'Rock' and the value of the computer's decision */
         determineWinner('Rock', computerPlayersDecision);
@@ -92,7 +101,7 @@
 
         /* At this point computerPlayersDecision with have the value of either 'Rock', 'Paper' or 'Scissors' */
 
-        console.log('Paper Clicked, Computer has chosen ', computerPlayersDecision);
+        console.log('Paper Clicked, Computer has chosen', computerPlayersDecision);
 
         /* Call our determine determineWinner function defined above with the literal value 'Paper' and the value of the computer's decision */
         determineWinner('Paper', computerPlayersDecision);
@@ -104,7 +113,7 @@
 
         /* At this point computerPlayersDecision with have the value of either 'Rock', 'Paper' or 'Scissors' */
 
-        console.log('Scissors Clicked, Computer has chosen ', computerPlayersDecision);
+        console.log('Scissors Clicked, Computer has chosen', computerPlayersDecision);
 
         /* Call our determine determineWinner function defined above with the literal value 'Scissors' and the value of the computer's decision */
         determineWinner('Scissors', computerPlayersDecision);

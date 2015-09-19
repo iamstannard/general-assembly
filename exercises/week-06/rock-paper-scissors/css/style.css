@@ -1,10 +1,11 @@
-.cf, .cf:before {
-    content: "";
+.cf,
+.cf:before {
+    content: " ";
     display: table;
 }
 
 .cf:after {
-    content: "";
+    content: " ";
     display: table;
 }
 
@@ -28,6 +29,9 @@ a {
 }
 
 .scoreboard {
-    /* Try to take this out of the flow so that it is positioned in the top
-    right of the screen, CSS only no JavaSript*/
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #eee;
+    padding: 30px;
 }
