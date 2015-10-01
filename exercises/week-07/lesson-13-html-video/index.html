@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML5 Video</title>
+    <meta charset="utf-8">
+    <meta name="description" content="A simple introduction to HTML5 Video">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <video autoplay id="video-background" loop>
+        <!-- If we had a webm format we could put that in above the mp4 -->
+        <source src="video/slaps-in-slow-motion-low-res.mp4" type="video/mp4">
+    </video>
+    <h1>JavaScript</h1>
+    <h2>What a slap in the face!</h2>
+    <div id="controls">
+        <!--
+        <p>We need to place a control here to allow the user to stop
+        the video.  You are required to write it in using vanillia
+        JavaScript (i.e. no <strong>jQuery</strong>) </p>
+-->
+        <button id="stop-button">STOP THE VIDEO</button>
+        <!--
+        <footer>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML5_audio_and_video" target="_blank">HTML5 Video</a>
+        </footer>
+-->
+    </div>
+
+    <script>
+        var videoPlayer = document.getElementById("video-background");
+        var stopButton = document.getElementById("stop-button");
+        var videoIsPlaying = true;
+
+        stopButton.addEventListener("click", toggleVideo);
+
+        function toggleVideo() {
+            if (videoIsPlaying) {
+                videoPlayer.pause();
+                videoIsPlaying = false;
+            } else {
+                videoPlayer.play();
+                videoIsPlaying = true;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

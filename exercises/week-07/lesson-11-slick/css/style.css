@@ -1,0 +1,105 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+header {
+    background: #eee;
+}
+
+header nav {
+    float: left;
+}
+
+h1 {
+    float: left;
+}
+
+header nav a,
+.btn-ct button {
+    display: inline-block;
+    width: 13em;
+    height: 4em;
+    /* Set our line-height the same as the height to get vertical center */
+    line-height: 4em;
+    color: white;
+    font-size: 1.2em;
+    background: #222;
+    text-align: center;
+}
+
+h1 {
+    text-align: right;
+    margin: 0.625em;
+    /* 20px / 32 = 0.625 */
+}
+
+h3 {
+    background: #fff;
+    color: #3498db;
+    font-size: 36px;
+    line-height: 100px;
+    margin: 10px;
+    padding: 2%;
+    position: relative;
+    text-align: center;
+    border: 1px solid #999;
+}
+
+.carousel {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.carousel img {
+    width: 100%;
+    padding: 15px;
+}
+
+.btn-ct {
+    text-align: center;
+}
+
+button.filter.active {
+    background: #57cb57;
+}
+
+
+/* Here we have decided to change the colour behind the arrows to match our nav.  These classes are defined in the
+* css for slick and I've found them by inspecting the DOM and reverse engineering it.  This is sometimes necessary */
+
+.slick-prev:before,
+.slick-next:before {
+    color: blue;
+}
+
+
+/* There is a User Agent Style in Chrome that gives two pillars when we
+change slide.  This selector removes the outline
+*/
+
+.slick-slide:focus {
+    outline: none;
+}
+
+.slick-center {
+    transform: scale(1.1);
+}

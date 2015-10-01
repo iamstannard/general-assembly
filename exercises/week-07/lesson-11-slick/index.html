@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Carousel</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- This is the first time you are being introduced to the viewport meta tag.  It is typically used to
+         make the screen zoom in on Mobile rather than the usual zoomed out desktop experience on Mobile.  More will
+         be revealed later so don't worry too much about it for now-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header class="cf">
+        <nav>
+            <a href="#">Home</a>
+        </nav>
+        <h1>jQuery Carousel Example</h1>
+    </header>
+
+    <div class="container">
+
+        <!-- Unfortunately the jQuery plugin slick requires divs by default.  See if you can figure out a way to
+            get slick to work with markup that is perhaps more semantic than divs, perhaps a ul li combination -->
+
+
+        <div id="filter-carousel" class="carousel">
+            <div data-category="outdoors">
+                <img alt="Picture of a boat at sea" src="img/sea.JPG">
+            </div>
+            <div data-category="outdoors">
+                <img alt="Picture of a deserted highway" src="img/desert-highway.jpg">
+            </div>
+            <div data-category="buildings">
+                <img alt="An image of the Golden Gate Bridge in San Francisco" src="img/bridge.jpg">
+            </div>
+            <div data-category="sport">
+                <img alt="A picture of a girl in running shoes" src="img/girlinrunningshoes.jpg">
+            </div>
+            <div data-category="outdoors">
+                <img alt="A sunset with a girl drinking a soft dring" src="img/girlinthesun.jpg">
+            </div>
+            <div data-category="sport">
+                <img alt="A snowboarder gets some air" src="img/snowboarding.jpg">
+            </div>
+        </div>
+        <div class="btn-ct">
+            <button id="filter-by-sport" class="filter">Filter by Sport</button>
+        </div>
+    </div>
+    
+    <!-- Note the order jQuery first, then the plugin then our script -->
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

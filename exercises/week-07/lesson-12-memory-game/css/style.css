@@ -1,0 +1,47 @@
+.cf:before,
+.cf:after {
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.container {
+    max-width: 960px;
+}
+
+[class*="tile"] {
+    float: left;
+    margin: 15px 0 15px 15px;
+    padding: 0;
+    width: 71px;
+    height: 96px;
+    transition: background 2s;
+}
+
+/* If you want to remove the gutter on the left of the first tile */
+[class*="tile"]:first-of-type {
+    margin-left: 0;
+}
+
+.hearts-queen {
+    background: url(../img/playing-cards/hq.png) no-repeat;
+}
+
+.diamonds-2 {
+    background: url(../img/playing-cards/d2.png) no-repeat;
+}
+
+.clubs-ace {
+    background: url(../img/playing-cards/c1.png) no-repeat;
+}
+
+.guess {
+    height: 96px;
+    line-height: 96px;
+    font-size: 3em;
+    text-align: center;
+    display: none;
+}
